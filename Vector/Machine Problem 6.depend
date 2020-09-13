@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1509498344 source:d:\college files\semester 3\cs 210\machine problem 6\machine problem 6\main.c
+	<stdio.h>
+	<stdlib.h>
+	"vector.c"
+	"vector.h"
+
+1509498004 source:d:\college files\semester 3\cs 210\machine problem 6\machine problem 6\vector.c
+	"vector.h"
+
+1509498684 d:\college files\semester 3\cs 210\machine problem 6\machine problem 6\vector.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+
+1509498687 d:\college files\semester 3\cs 210\machine problem 6\machine problem 6\vector.c
+	"vector.h"
+
