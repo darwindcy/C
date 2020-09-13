@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1505419806 source:d:\college files\semester 3\cs 210\machine problem 2\mp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+
