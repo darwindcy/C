@@ -1,0 +1,88 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX_LEN 20
+
+typedef enum{
+    Spades,
+    Hearts,
+    Diamonds,
+    Clubs
+}card_suits;
+
+typedef enum{
+    Ace = 1,
+    Two = 2,
+    Three = 3,
+    Four = 4,
+    Five = 5,
+    Six = 6,
+    Seven = 7,
+    Eight = 8,
+    Nine = 9,
+    Ten = 10,
+    Jack = 11,
+    Queen = 12,
+    King = 13
+}card_value;
+
+typedef struct{
+    card_suits suit;
+    card_value value;
+} card_t;
+
+void print_card(int value, card_suits suit);
+
+int main()
+{
+    card_t cards;
+
+    cards.suit = Spades;
+    cards.value = Ace;
+
+   // printf(cards.value,cards.suit);
+
+    print_card(cards.value, cards.suit);
+    //printf("The card is %d of %s", cards.value, cards.suit);
+    return 0;
+}
+
+void print_card(int value, card_suits suit){
+    char current_suit[50];
+    //switch(suit){
+
+    if (suit == Clubs){
+        strcpy(current_suit, "Clubs");
+        //printf("%d of Clubs", value);
+        //break;
+    }else if(suit == Diamonds){
+        strcpy(current_suit, "Diamonds");
+        //printf("%d of Diamonds", value);
+        //break;
+    }else if(suit == Hearts){
+        strcpy(current_suit, "Hearts");
+        //printf("%d of Hearts", value);
+        //break;
+    }else{
+        strcpy(current_suit, "Spades");
+        //printf("%d of Spades", value);
+        //break;
+    }
+/*
+    if (suit == Spades && value == Ace){
+        printf("Ace of Spades");
+    }
+*/
+    if (value == 1){
+        printf("Ace of %s", current_suit);
+    }else if(value == 11){
+        printf("Jack of %s", current_suit);
+    }else if(value == 12){
+        printf("Queen of %s", current_suit);
+    }else if(value == 13){
+        printf("King of %s", current_suit);
+    }else{
+        printf("%d of %s", value, current_suit);
+    }
+}

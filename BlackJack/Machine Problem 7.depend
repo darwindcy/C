@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1511072063 source:d:\college files\semester 3\cs 210\machine problem 7\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<ctype.h>
+	"cards.h"
+	"cards.c"
+
+1511074823 source:d:\college files\semester 3\cs 210\machine problem 7\cards.c
+	"cards.h"
+
+1511074823 d:\college files\semester 3\cs 210\machine problem 7\cards.h
+
+1511074823 d:\college files\semester 3\cs 210\machine problem 7\cards.c
+	"cards.h"
+
